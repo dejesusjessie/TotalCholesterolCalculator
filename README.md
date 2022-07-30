@@ -2,7 +2,7 @@
 
 
 Summary:
-      With this application, users can calculate their total cholesterol, HDL-C, LDLC-C, and triglycerides. Given access to this calculator allows users to take control of their health and improve healthcare literacy. 
+With this application, users can calculate their total cholesterol, HDL-C, LDLC-C, and triglycerides. Given access to this calculator allows users to take control of their health and improve healthcare literacy. 
 
 How to run the frontend:
 1. Select LDL-Cholesterol from the drop-down menu in order to use Total Cholesterol, HDL-Cholesterol, and Triglycerides to calculate LDL-Cholesterol. 
