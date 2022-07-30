@@ -1,7 +1,7 @@
 # TotalCholesterolCalculator
 
 
-Summary
+Summary:
       With this application, users can calculate their total cholesterol, HDL-C, LDLC-C, and triglycerides. Given access to this calculator allows users to take control of their health and improve healthcare literacy. 
 
 How to run the frontend:
