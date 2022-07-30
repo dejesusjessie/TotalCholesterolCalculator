@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Total Cholesterol Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+        <div class="container">
+                <!-- Header -->
+                <div class="header">
+                        Total Cholesterol Calculator
+                </div>
+
+                <!-- Options menu -->
+                <div class="menu">
+                        <div class="fgr row" id="rowcategory">
+                                <div class="col-3">
+                                        <label for="category" class="label">Solve For:</label>
+                                </div>
+                                <div class="col-6">
+                                        <select class="form-select" name="category" id="category">
+                                                <option value="ldlc" selected="selected">LDL-Cholesterol</option>
+                                                <option value="totalc">Total Cholesterol</option>
+                                                <option value="hdlc">HDL-Cholesterol</option>
+                                                <option value="trig">Triglycerides</option>
+                                        </select>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="content">
+                        <!-- Image -->
+                        <img class="chartImg" src="image/Chart.png" />
+                        <div class="row tool">
+                                <div class="col-xl-10">
+                                        <form id="calculator"
+                                                class="calculator justify-content-center align-items-center"
+                                                method="post">
+                                                <!-- LDL-C -->
+                                                <div class="fgr row" id="rowldlc">
+                                                        <div class="col-5">
+                                                                <label for="ldlc"
+                                                                        class="float-end fw-bold">LDL-Cholesterol</label>
+                                                        </div>
+                                                        <div class="col-5 in">
+                                                                <div class="input-group">
+                                                                        <input type="number" class="form-control ldlc"
+                                                                                id="ldlc" name="ldlc" placeholder="mg/dL"
+                                                                                step="any" min="0" autocomplete="off">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <!-- Total-C -->
+                                                <div class="fgr row" id="rowtotalc">
+                                                        <div class="col-5">
+                                                                <label for="totalc"
+                                                                        class="float-end fw-bold">Total Cholesterol</label>
+                                                        </div>
+                                                        <div class="col-5 in">
+                                                                <div class="input-group">
+                                                                        <input type="number" class="form-control totalc"
+                                                                                id="totalc" name="totalc" placeholder="mg/dL"
+                                                                                step="any" min="0" autocomplete="off">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <!-- HDL-C -->
+                                                <div class="fgr row" id="rowhdlc">
+                                                        <div class="col-5">
+                                                                <label for="hdlc"
+                                                                        class="float-end fw-bold">HDL-Cholesterol</label>
+                                                        </div>
+                                                        <div class="col-5 in">
+                                                                <div class="input-group">
+                                                                        <input type="number" class="form-control hdlc"
+                                                                                id="hdlc" name="hdlc" placeholder="mg/dL"
+                                                                                step="any" min="0" autocomplete="off">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <!-- Trig -->
+                                                <div class="fgr row" id="rowtrig">
+                                                        <div class="col-5">
+                                                                <label for="trig"
+                                                                        class="float-end fw-bold">Triglycerides</label>
+                                                        </div>
+                                                        <div class="col-5 in">
+                                                                <div class="input-group">
+                                                                        <input type="number" class="form-control trig"
+                                                                                id="trig" name="trig" placeholder="mg/dL"
+                                                                                step="any" min="0" autocomplete="off">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                
+                                                <span class="result justify-content-center align-items-center"></span>
+                                                
+                                                
+                                        </form>
+
+                                </div>
+                        </div>
+
+                </div>
+                <div class="calculate">
+                        <button type="button" class="btn btn-secondary">Calculate Results</button>
+                </div>
+        </div>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"></script>
+      
+</body>
+
+</html>
